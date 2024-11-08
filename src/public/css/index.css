@@ -1,0 +1,190 @@
+body {
+    color: #99917c;
+}
+
+.header {
+    max-width: 100% ;
+    background-color: #fff;
+    border-bottom: 1px solid #cec9bd;
+    margin: 0 auto;
+}
+
+.header__inner {
+
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    font-weight: lighter;
+    font-size: 34px;
+    text-decoration: none;
+    text-align: center;
+    font-family: serif;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    font-family: serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+
+    color: #ff0000;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 0;
+    background: #eeeeee;
+    color: #99917c;
+
+}
+
+.name-input input {
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #99917c;
+    background: #eeeeee;
+    height: 40px;
+    width: 275px;
+    padding: 10px;
+
+}
+
+
+.name-fields {
+    display: flex;
+    gap: 50px;
+    border: none;
+
+
+}
+
+
+.gender-options {
+    margin-left: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 2px solid #d3bdb0;
+    border-radius: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+input[type="radio"]:checked+ ::before {
+    background-color: #d3bdb0;
+    border-color: #d3bdb0;
+}
+
+
+.gender-options label {
+    margin-right: 70px;
+
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.phone-number-input {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-left: 0;
+
+}
+
+.phone-number-input input {
+    width: 176px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    text-align: center;
+    color: #99917c;
+    height: 40px;
+}
+
+
+.form__select select {
+    width: 300px;
+    margin-right: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: #eeeeee;
+    color: #99917c;
+}
+
+
+.form__input--textarea textarea {
+    height: 70px;
+}
+
+.form__button {
+    margin-top: 0;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #656053;
+    color: #fff;
+    cursor: pointer;
+}
