@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+@section('css')
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+@endsection
 
-</head>
 
-<body>
-    <header class="header">
-        <div class="header__inner">
-            <div class="header__logo" >
-                FashionablyLate
-            </div>
-        </div>
-    </header>
+@section('content')
 
-    <main>
         <div class="contact-form__content">
             <div class="contact-form__heading">
                 Contact
@@ -61,7 +47,7 @@
                 </div>
 
                 <div class="gender-options">
-                    <input type="radio" id="male" name="gender" value="male" value="{{ old('gender') }}" checked>
+                    <input type="radio" id="male" name="gender" value="male"  checked>
                     <label for="male">男性</label>
                     <input type="radio" id="female" name="gender" value="female" value="{{ old('gender') }}">
                     <label for="female">女性</label>
@@ -85,7 +71,7 @@
                         <input type="email" name="email" placeholder="例:test@example.com" value="{{ old('email') }}"/>
                     </div>
                     <div class="form__error">
-                        @error('gender')
+                        @error('email')
                         {{ $message }}
                         @enderror
                     </div>
@@ -105,7 +91,7 @@
                         <input type="tel" name="tell3" maxlength="4" placeholder="5678" value="{{ old('tell3') }}"/>
                     </div>
                     <div class="form__error">
-                        @error('gender')
+                        @error('tel')
                         {{ $message }}
                         @enderror
                     </div>
@@ -149,8 +135,8 @@
                             <option value="type1">商品のお届けについて</option>
                             <option value="type2">商品の交換について</option>
                             <option value="type3">商品トラブル</option>
-                            <option value="type3">ショップへのお問合せ</option>
-                            <option value="type3">その他</option>
+                            <option value="type4">ショップへのお問合せ</option>
+                            <option value="type5">その他</option>
                         </select>
                         <div class="form__error">
                             @error('content_type')
@@ -167,7 +153,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--textarea">
-                        <textarea name="content" placeholder="お問合せ内容をご記載ください" value="{{ old('content') }}"></textarea>
+                        <textarea name="content" placeholder="お問合せ内容をご記載ください">{{ old('content') }}</textarea>
                     </div>
                     <div class="form__error">
                         @error('content')
@@ -180,9 +166,8 @@
                 <button class="form__button-submit" type="submit">確認画面</button>
             </div>
         </form>
-    </main>
-</body>
-</html>
+@endsection
+
 
 
 

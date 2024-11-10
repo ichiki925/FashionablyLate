@@ -1,0 +1,28 @@
+body {
+    color: #99917c;
+}
+
+.header {
+    max-width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #cec9bd;
+    margin: 0 auto;
+}
+
+.header__inner {
+
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1230px;
+}
+
+
+
+.header__logo {
+    font-weight: lighter;
+    font-size: 34px;
+    text-decoration: none;
+    text-align: center;
+    font-family: serif;
+}
+
